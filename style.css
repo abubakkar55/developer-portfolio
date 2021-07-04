@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.world{
+    margin-bottom: 10px;
+}
+
+.orange-clr {
+    color: #ffa500;
+}
+
+.header {
+    display: flex;
+    gap: 40px;
+padding: 40px 50px;
+align-items: center;
+justify-content: center;
+background-image: url('My Pic/top-banner.png');
+background-repeat: no-repeat;
+}
+
+.left,
+.right {
+    flex-basis: 50%;
+}
+
+/* left side styleing */
+
+
+.description{
+    margin: 10px 0 30px;
+    color: rgb(153, 148, 148);
+}
+
+.hire-me{
+    text-decoration: none;
+    padding: 10px 40px;
+    color: #fff;
+    background-image: linear-gradient(to right, #FF8E6B, #FF684B);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+/* right side styleing */
+
+.right img {
+    width: 90%;
+    
+}
+
+
