@@ -78,7 +78,7 @@ h1 {
 /* Experiences */
 
 .experience-container{
-    background-image: url('My pic/bg.png');
+    background: url('My pic/bg.png');
     background-repeat: no-repeat;
     background-position: left 70%;
     margin-bottom: 50px;
