@@ -12,7 +12,7 @@ h1 {
     font-size: 50px;
 }
 
-.world{
+.world {
     margin-bottom: 10px;
 }
 
@@ -20,34 +20,33 @@ h1 {
     color: #ffa500;
 }
 
-section {
+.flexible-container {
     display: flex;
     gap: 30px;
-padding: 40px 50px;
-align-items: center;
-justify-content: center;
-margin-bottom: 20px;
+    padding: 40px 50px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.header{
-    background-image: url('My Pic/top-banner.png');
-background-repeat: no-repeat;
-}
-
-.left,
-.right {
+.flexible-container>div {
     flex-basis: 50%;
+}
+
+.header {
+    background-image: url('My Pic/top-banner.png');
+    background-repeat: no-repeat;
 }
 
 /* left side styleing */
 
-
-.description{
+.description {
     margin: 10px 0 30px;
     color: rgb(153, 148, 148);
+    padding-right: 100px;
 }
 
-.hire-me{
+.hire-me {
     text-decoration: none;
     padding: 10px 40px;
     color: #fff;
@@ -63,18 +62,74 @@ background-repeat: no-repeat;
 .right img {
     width: 90%;
 }
+
 .left img {
     width: 90%;
 }
 
 /* dream-big */
 
-.dream-big{
+.dream-big {
     background-image: url('My Pic/dream-bg.png');
     background-repeat: no-repeat;
     background-position: right 70%;
 }
 
-.dream-big p{
-    padding-right: 100px;
+/* Experiences */
+
+.experience{
+    background-image: url('My pic/exp-bg.png');
+    background-repeat: no-repeat;
+    background-position: left 70%;
+    margin-bottom: 50px;
+}
+
+.experience h1{
+    text-align: center;
+position: relative;
+margin-bottom: 30px;
+}
+
+.experience h1::after{
+position: absolute;
+width: 15%;
+height: 3px;
+content: "";
+bottom: -20px;
+left: 50%;
+transform: translateX(-50%);
+background-color:orange ;
+border-radius: 50px;
+}
+
+.experience h2{
+font-size: 33px;
+margin-bottom: 20px;
+}
+.experience h3{
+margin-bottom: 30px;
+}
+
+.experience .items{
+    border-radius: 6px;
+height: 390px;
+padding: 30px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.experience p{
+    color: rgb(105, 102, 102);
+}
+
+.experience .experi-left{
+border-left: 7px solid;
+border-image: linear-gradient(to bottom, #FF684B, #FF8E6B) 1;
+}
+.experience .experi-right{
+    border-left: 7px solid;
+    border-image: linear-gradient(to bottom, blue, cyan) 1;
+}
+
+footer p{
+    padding: 20px 0;
+    text-align: center;
 }
