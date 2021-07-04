@@ -73,6 +73,7 @@ h1 {
     background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right 70%;
+    background-size: 10%;
 }
 
 /* Experiences */
@@ -80,6 +81,7 @@ h1 {
 .experience-container{
     background: url(images/bg.png);
     background-repeat: no-repeat;
+    background-size: 8%;
     background-position: left 70%;
     margin-bottom: 50px;
 }
@@ -111,8 +113,8 @@ margin-bottom: 30px;
 }
 
 .experience .items{
+    min-height: 380px;
     border-radius: 6px;
-height: 390px;
 padding: 30px;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -124,6 +126,7 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 border-left: 7px solid;
 border-image: linear-gradient(to bottom, #FF684B, #FF8E6B) 1;
 }
+
 .experience .experi-right{
     border-left: 7px solid;
     border-image: linear-gradient(to bottom, blue, cyan) 1;
@@ -133,3 +136,65 @@ footer p{
     padding: 20px 0;
     text-align: center;
 }
+
+/* responsive  for tablets*/
+
+@media screen  and (min-width:640px) and (max-width:1023px){
+
+    h1 {
+        font-size: 40px;
+    }
+
+.header .left p, .dream-big .right p{
+    padding: 0;
+}
+.experience .items{
+    padding: 15px;
+   min-height: 380px;
+}
+
+.experience .items  h2{
+    font-size: 28px;
+} 
+}
+
+
+
+/* responsive  for Mobile*/
+
+@media screen  and (max-width:639px){
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .flexible-container {
+        display: flex;
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+.header.flexible-container{
+    flex-direction: column-reverse;
+}
+
+.header .right, .dream-big .left img{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+.header .left, .dream-big .right{
+    text-align: center;
+}
+
+
+.header .left p, .dream-big .right p{
+    padding: 0 20px;
+}
+
+.experience .items  h2{
+    font-size: 25px;
+} 
+}
+
+
+
