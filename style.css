@@ -20,13 +20,17 @@ h1 {
     color: #ffa500;
 }
 
-.header {
+section {
     display: flex;
-    gap: 40px;
+    gap: 30px;
 padding: 40px 50px;
 align-items: center;
 justify-content: center;
-background-image: url('My Pic/top-banner.png');
+margin-bottom: 20px;
+}
+
+.header{
+    background-image: url('My Pic/top-banner.png');
 background-repeat: no-repeat;
 }
 
@@ -58,7 +62,19 @@ background-repeat: no-repeat;
 
 .right img {
     width: 90%;
-    
+}
+.left img {
+    width: 90%;
 }
 
+/* dream-big */
 
+.dream-big{
+    background-image: url('My Pic/dream-bg.png');
+    background-repeat: no-repeat;
+    background-position: right 70%;
+}
+
+.dream-big p{
+    padding-right: 100px;
+}
